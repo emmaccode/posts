@@ -1,3 +1,5 @@
+- name: Medium Post
+  uses: InfraWay/post-medium-action@v1.6.0
 name: publish-to-medium
 on: [push]
 jobs:
