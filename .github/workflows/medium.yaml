@@ -1,9 +1,8 @@
 on: [push]
 jobs:
-publish_blog_to_medium:
     if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
-    name: Post to Medium (higgins.medium.com)
+    name: Post to Medium (emmettgb.medium.com)
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -41,4 +40,4 @@ publish_blog_to_medium:
         with:
           access_token: ${{ secrets.MEDIUM_ACCESS_TOKEN }}
           markdown_file: ${{ steps.posts.outputs.post0 }}
-          base_url: https://encapsulate.me
+          base_url: https://inside.ems.computer/
