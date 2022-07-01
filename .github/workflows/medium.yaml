@@ -1,6 +1,5 @@
 on: [push]
 jobs:
-    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     name: Post to Medium (emmettgb.medium.com)
     steps:
