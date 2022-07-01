@@ -1,0 +1,2 @@
+- name: Medium Post
+  uses: InfraWay/post-medium-action@1.6.0
