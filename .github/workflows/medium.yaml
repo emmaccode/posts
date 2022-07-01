@@ -4,11 +4,11 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - id: files
-      uses: jitterbit/get-changed-files@v1
-      - id: posts
-        name: Detecting posts from the changes
+      steps:
+        - id: files
+          uses: jitterbit/get-changed-files@v1
+        - id: posts
+          name: Detecting posts from the changes
         run: |
           i=0
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
