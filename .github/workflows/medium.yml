@@ -26,5 +26,5 @@ jobs:
         with:
           access_token: ${{ secrets.MEDIUM_ACCESS_TOKEN }}
           markdown_file: ${{ steps.posts.outputs.post0 }}
-          base_url: https://ems.computer/
-          post_url: https://inside.ems.computer/
+          base_url: https://myblog.com
+          post_url: https://myblog.com/posts
