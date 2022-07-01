@@ -1,8 +1,3 @@
-- name: Medium Post
-  uses: InfraWay/post-medium-action@1.6.0
-name: publish-to-medium
-on: [push]
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,7 +10,7 @@ jobs:
           i=0
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             echo "Do something with ${changed_file}."
-            if [[ "${changed_file}" == "content/posts"* ]];
+            if [[ "${changed_file}" == "posts"* ]];
             then
               echo "File ${changed_file} matched post."
               echo "::set-output name=post${i}::${changed_file}"
